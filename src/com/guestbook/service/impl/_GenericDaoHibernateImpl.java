@@ -34,8 +34,8 @@ public abstract class _GenericDaoHibernateImpl<T> extends HibernateDaoSupport im
      * This is necessary if you're going to extend this implementation class for entity-specific
      * methods. e.g.:
      <pre>
-      	public interface MyPojoDao extends IGenericDAO<MyPojo> {}
-      	public class MyPojoDaoHibernateImpl extends _GenericDaoHibernateImpl<MyPojo> implements MyPojoDao {
+      	public interface IMyPojoDao extends IGenericDAO<MyPojo> {}
+      	public class MyPojoDaoHibernateImpl extends _GenericDaoHibernateImpl<MyPojo> implements IMyPojoDao {
       		public MyPojoDaoHibernateImpl() {
       			super(MyPojo.class);
       		}
