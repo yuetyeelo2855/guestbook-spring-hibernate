@@ -36,7 +36,7 @@ public class GuestbookHibernateImplServlet extends HttpServlet {
 		request.setAttribute("guests", guests);
 		
 		
-		forward(request, response, "/guestbook.jsp");
+		forward(request, response, "/WEB-INF/jsp/guestbook.jsp");
 	}
 	
 	
